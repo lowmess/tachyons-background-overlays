@@ -1,6 +1,6 @@
 {
   "name": "tachyons-background-overlays",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Tachyons module for adding overlays to background images",
   "main": "css/tachyons-background-overlays.css",
   "style": "css/tachyons-background-overlays.css",
