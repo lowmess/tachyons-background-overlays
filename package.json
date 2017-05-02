@@ -1,0 +1,34 @@
+{
+  "name": "tachyons-background-overlays",
+  "version": "0.0.0",
+  "description": "Tachyons module for adding overlays to background images",
+  "main": "css/tachyons-background-overlays.css",
+  "style": "css/tachyons-background-overlays.css",
+  "repository": "lowmess/tachyons-background-overlays",
+  "keywords": [
+    "tachyons",
+    "tachyons-css"
+  ],
+  "files": [
+    "src",
+    "css"
+  ],
+  "author": {
+    "name": "Alec Lomas",
+    "email": "alec@lowmess.com",
+    "url": "http://lowmess.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run build:watch",
+    "build:css": "tachyons src/tachyons-background-overlays.css > css/tachyons-background-overlays.css",
+    "build:minify": "tachyons src/tachyons-background-overlays.css --minify > css/tachyons-background-overlays.min.css",
+    "build:docs": "tachyons src/tachyons-background-overlays.css --generate-docs -a --package=../../package.json > readme.md",
+    "build": "npm run build:css && npm run build:minify && npm run build:docs",
+    "build:watch": "watch 'npm run build' ./src"
+  },
+  "devDependencies": {
+    "tachyons-cli": "^1.0.11",
+    "watch": "^1.0.2"
+  }
+}
