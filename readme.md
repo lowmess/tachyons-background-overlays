@@ -1,10 +1,10 @@
-# tachyons-background-overlays 0.0.0
+# tachyons-background-overlays 1.1.0
 
 Tachyons module for adding overlays to background images
 
 #### Stats
 
-393 | 24 | 24
+429 | 32 | 32
 ---|---|---
 bytes | selectors | declarations
 
@@ -55,7 +55,7 @@ $ tachyons path/to/css-file.css > dist/t.css
 The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
 
 ```
-<link rel="stylesheet" href="http://unpkg.com/tachyons-background-overlays@0.0.0/css/tachyons-background-overlays.min.css" />
+<link rel="stylesheet" href="http://unpkg.com/tachyons-background-overlays@1.1.0/css/tachyons-background-overlays.min.css" />
 ```
 
 ##### Locally
@@ -88,32 +88,40 @@ Running `$ npm start` will process the source css and place the built css in the
    -l  = large
 
 */
+.bg-darken-0 { box-shadow: none; }
 .bg-darken-25 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
 .bg-darken-50 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
 .bg-darken-75 { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+.bg-lighten-0 { box-shadow: none; }
 .bg-lighten-25 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
 .bg-lighten-50 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
 .bg-lighten-75 { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
 @media screen and (min-width: 30em) {
+ .bg-darken-0-ns { box-shadow: none; }
  .bg-darken-25-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
  .bg-darken-50-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
  .bg-darken-75-ns { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-0-ns { box-shadow: none; }
  .bg-lighten-25-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
  .bg-lighten-50-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
  .bg-lighten-75-ns { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
+ .bg-darken-0-m { box-shadow: none; }
  .bg-darken-25-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
  .bg-darken-50-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
  .bg-darken-75-m { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-0-m { box-shadow: none; }
  .bg-lighten-25-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
  .bg-lighten-50-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
  .bg-lighten-75-m { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
 }
 @media screen and (min-width: 60em) {
+ .bg-darken-0-l { box-shadow: none; }
  .bg-darken-25-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .25 ); }
  .bg-darken-50-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .5 ); }
  .bg-darken-75-l { box-shadow: inset 0 0 0 9999px rgba( 0, 0, 0, .75 ); }
+ .bg-lighten-0-l { box-shadow: none; }
  .bg-lighten-25-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .25 ); }
  .bg-lighten-50-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .5 ); }
  .bg-lighten-75-l { box-shadow: inset 0 0 0 9999px rgba( 255, 255, 255, .75 ); }
